@@ -82,7 +82,7 @@ maxPower = 1.0						# Maximum of allowed drive output (1.0 is 100%)
 # Crop settings
 cropX1 = int(imageWidth  * 0.00)	# Left edge of the image to use
 cropX2 = int(imageWidth  * 1.00)	# Right edge of the image to use
-cropY1 = int(imageHeight * 0.50)	# Top edge of the image to use
+cropY1 = int(imageHeight * 0.40)	# Top edge of the image to use
 cropY2 = int(imageHeight * 1.00)	# Bottom edge of the image to use
 
 # Image black identification tuning
@@ -124,7 +124,7 @@ for i in range(grid + 1):
 trackSepX = 100						# Number of pixels between two lines at offsetTargetY
 gainCorrection = 4.6 				# Corrective gain per track width off central
 angleCorrection = 6.0				# Correction for the track angle from camera angle
-	
+
 # Other image processing settings
 maxSepX = 0.20 * imageWidth			# Furthest two edges can be apart for merging
 offsetTargetY = 0.25				# Y level from the top of the crop to use for offset calculations
@@ -176,7 +176,7 @@ wrongWayThreshold = 10				# Number of wrong-way points before deciding to turn a
 wrongWaySpinSeconds = 0.8			# Number of seconds to spin when the wrong way around
 
 # Traffic light settings
-lightsChangeThreshold = 50.0		# Minimum colour difference to flag as a change in light colour 
+lightsChangeThreshold = 50.0		# Minimum colour difference to flag as a change in light colour
 lightsRedGain = 2.0					# Gain term used to make the red and green levels consistent
 lightsX1 = int(imageWidth  * 0.45)	# Lower X boundary for light detection
 lightsX2 = int(imageWidth  * 0.55)	# Upper X boundary for light detection
